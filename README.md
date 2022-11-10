@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+*****************************
+
+
+commands + zugehörige files and what they mean
+
+source/app/app.component.html: actual content of the app page is coming from there
+
+frontend/todo/.eslintrc.json: rules for linting
+
+karma.conf.js: This is the configuration of the test-runner, which is karma.
+(file-suche: cmd p)
+
