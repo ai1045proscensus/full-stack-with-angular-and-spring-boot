@@ -69,3 +69,18 @@ wichtige folders / files
 * styles.css: GLOBAL application styles => whatever styles you'd want to use across the application
 
 * test.ts: starting point for unit test (used when we run ng test)
+
+
+
+***********************************************
+
+components
+
+in app.component.ts:
+@Component({
+  selector: 'app-root',
+
+  und in index.html wird diese componente benutzt:
+<body>
+  <app-root></app-root>
+</body>
