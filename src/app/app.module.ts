@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { Ai2045Component } from './ai2045/ai2045.component';
+import { LoginComponent } from './login/login.component';
 
 // Every angular component (@Component) has to be
 // associated with an Angular module (@NgModule).
@@ -13,7 +14,8 @@ import { Ai2045Component } from './ai2045/ai2045.component';
   declarations: [
     AppComponent,
     WelcomeComponent,
-    Ai2045Component
+    Ai2045Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
