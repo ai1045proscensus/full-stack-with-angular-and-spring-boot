@@ -1,8 +1,24 @@
 <div style="width: 20%;">
     <p>
-        Username: <input type="text" name="username">
+        <!-- binding: we are taking value from component (view logic) and tying it to the template (html) -->
+        Username: <input type="text" name="username" value="{{username}}">
     </p>
     <p>
-        pwd: <input type="password" name="pwd">
+        pwd: <input type="password" name="pwd" value="{{pwd}}">
     </p>
+
+    <!-- Let's say when login button is clicked
+    I would want to print the Username.
+    The way we can do that in Angular is by doing event binding.
+    syntax of event binding is:
+    event: Which event are you listening to 
+    and method you want to call:
+    <button (event)=whatShouldYouDo()>login</button>
+ -->
+    <button (click)=handleLogin()>login</button>
+
+<!-- The great thing about Anguler is the fact that the place where you would define this 
+is the login.component. this component would handle all the view logic => so all the methods
+which are related to the view would be coded in login.component. -->
+
 </div>
