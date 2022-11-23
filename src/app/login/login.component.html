@@ -1,7 +1,67 @@
 <div style="width: 20%;">
     <p>
         <!-- binding: we are taking value from component (view logic) and tying it to the template (html) -->
-        Username: <input type="text" name="username" value="{{username}}">
+        Username: <input type="text" name="username" [(ngModel)]="username">
+
+        <!-- bis jetzt haben wir 1-way binding:
+            What we are able to do is take the component data. 
+            We were able to use interpolation and put it on the screen
+            => so: component => html tamam
+            ama html => component nasil yapacaz? (2-way)
+            
+            how do I take the data from the screen/view/html element
+            and populate it into the component data?
+            (=> damit dann mit interpolation das ausgegeben werden kann...)
+
+            but now what we want to do is what our user has typed in.
+            I want to be able to take it and show it in the component.
+            
+                => ngModel with 2-way data binding
+        -->
+
+        <!-- Until now: two kinds of data binding:
+                1) interpolation (one-way) (value="{{username}})
+                2) event binding (<button (click)=handleLogin()>)
+                3) mix of both of these ("banana in a box syntax: [()]") 
+            
+            Angular 2 Data-Bindings: The Banana In a Box
+        Two-way Binding - [()] or bindon-*
+        AKA the Banana in a Box, it is a literal shortcut for one-way and event binding.
+    
+        so this is the syntax: [()]
+        and there's a specific angular feature we need to use to enable this: ngModel
+
+        =>  we are tying field to a model element.
+        And where is that model element present? In username.
+
+        => [(ngModel)]="username"
+        
+        now we can remove the value 
+        
+        value="{{username}}
+        
+        because we don't need it anymore,
+        because  ngModel would do binding on both sides.
+
+        Fehler: "Can't bind to 'ngModel' since it isn't a known property of 'input'"
+        
+        => In order to be able to use two-way data binding for form inputs you need to 
+            import the FormsModule package in your Angular module.
+            => We must include FormModule in the app.module.ts file
+            => Open app.module.ts and add the import line
+
+                import { FormsModule } from '@angular/forms';
+            
+            and add FormsModule to imports:
+
+                @NgModule({
+                    imports: [
+                    FormsModule
+                    ],
+                })
+    
+    -->
+
     </p>
     <p>
         pwd: <input type="password" name="pwd" value="{{pwd}}">
@@ -17,7 +77,7 @@
  -->
     <button (click)=handleLogin()>login</button>
 
-<!-- The great thing about Anguler is the fact that the place where you would define this 
+    <!-- The great thing about Anguler is the fact that the place where you would define this 
 is the login.component. this component would handle all the view logic => so all the methods
 which are related to the view would be coded in login.component. -->
 
