@@ -12,7 +12,9 @@ export class LoginComponent implements OnInit {
 
   handleLogin(): void{
     console.log(this.username)
+    console.log(this.pwd)
   }
+  
 
   constructor() { }
 
