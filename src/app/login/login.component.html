@@ -39,6 +39,9 @@
         And where is that model element present? In username.
 
         => [(ngModel)]="username" // username ist PROPERTY NAME from the component(.ts)
+
+        ngModel is called a "angular directive".
+        Angular directives add additional meaning on top of the typical HTML.
         
         now we can remove the value 
         
@@ -80,8 +83,8 @@
     <button (event)=whatShouldYouDo()>login</button>
  -->
 
- username: {{username}}
- pwd: {{pwd}}
+    username: {{username}}
+    pwd: {{pwd}}
     <button (click)=handleLogin()>login</button>
 
     <!-- The great thing about Anguler is the fact that the place where you would define this 
