@@ -1,3 +1,6 @@
+<!-- You use the *ngIf directive in Angular to show some data or item based on some condition. -->
+<small *ngIf="invalidLogin">{{errorMessage}}</small>
+
 <div style="width: 20%;">
     <p>
         <!-- binding: we are taking value from component (view logic) and tying it to the template (html) -->
@@ -83,8 +86,8 @@
     <button (event)=whatShouldYouDo()>login</button>
  -->
 
-    username: {{username}}
-    pwd: {{pwd}}
+    <!-- username: {{username}}
+    pwd: {{pwd}} -->
     <button (click)=handleLogin()>login</button>
 
     <!-- The great thing about Anguler is the fact that the place where you would define this 
