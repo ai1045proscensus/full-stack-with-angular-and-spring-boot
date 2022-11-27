@@ -20,21 +20,13 @@ import { WelcomeComponent } from './welcome/welcome.component';
 // =>"welcome". and which component defines that? => zugehöriges WelcomeComponent
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'welcome', component: WelcomeComponent}
+  {path: 'welcome', component: WelcomeComponent},
+  {path: '', component: WelcomeComponent}
 ];
 
-// TODO: hier weiter
-// Thing is there is a tag for router,
-
-// which you'd need to use to enable routing.
-
-// Lets go to "app.component.html."
-
-// That's the first component that is loaded.
-
-// Inside here, earlier we had commented something
-
-// called, "router-outlet."
+// there is a tag for router, which you'd need to use to enable routing.
+// Lets go to "app.component.html." That's the first component that is loaded.
+// Inside here, earlier we had commented something called, "router-outlet." => einkommentieren
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

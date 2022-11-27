@@ -1,8 +1,10 @@
-
-
 <!-- we are including the new generated component in2 the html of another (the root) component -->
-  <!-- <app-welcome></app-welcome> -->
-  <app-login></app-login>
+<!-- <app-welcome></app-welcome> -->
+<!-- <app-login></app-login> -->
 
-  <!-- <app-ai2045></app-ai2045>
-<router-outlet></router-outlet> -->
+<!-- <app-ai2045></app-ai2045>-->
+<!-- this is the tag, which enables the display of whatever output which router is producing. -->
+<router-outlet></router-outlet>
+<!-- So now you'd see, when I say,"localhost:4200."
+    => You are not seeing anything, because we have not defined the route for it. 
+  dafür müsste ich zb das hier in routes definieren: {path: '', component: WelcomeComponent}-->
