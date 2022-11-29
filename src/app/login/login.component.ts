@@ -4,6 +4,7 @@
 // ERROR Error: Uncaught (in promise): Error: NG04002: Cannot match any routes. URL Segment: 'asdf'
 // at ApplyRedirects.noMatchError (router.mjs:3644:16))
 
+// So this error component would be used ganz allgemein as the display page when something wrong happens.
 
 import { Component, OnInit } from '@angular/core';
 
