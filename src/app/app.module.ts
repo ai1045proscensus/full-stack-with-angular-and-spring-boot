@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { Ai2045Component } from './ai2045/ai2045.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
 
 // Every angular component (@Component) has to be
 // associated with an Angular module (@NgModule).
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     WelcomeComponent,
     Ai2045Component,
-    LoginComponent
+    LoginComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
