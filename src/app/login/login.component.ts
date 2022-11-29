@@ -1,3 +1,10 @@
+// this component is used for example, whe user types in garbage (zb /login234qwer)
+// (wir wollen user nicht stacktrace anzeigen sondern extra custom fehlerseite/-meldung:
+// main.ts:11  
+// ERROR Error: Uncaught (in promise): Error: NG04002: Cannot match any routes. URL Segment: 'asdf'
+// at ApplyRedirects.noMatchError (router.mjs:3644:16))
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
