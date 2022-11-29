@@ -26,6 +26,7 @@ const routes: Routes = [
 
 // => eine route ist wie GetMapping-Anno in Rest (@GetMapping(path = "welcome))
 //=> welcome deyince url'de su komponent'e gitsin....
+// und routING ist wie maskenfolgediagram: route von diesem komponent zu nächsten....
 
 // there is a tag for router, which you'd need to use to enable routing.
 // Lets go to "app.component.html." That's the first component that is loaded.
