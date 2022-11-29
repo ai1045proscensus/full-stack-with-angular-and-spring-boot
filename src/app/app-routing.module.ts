@@ -24,6 +24,9 @@ const routes: Routes = [
   {path: '', component: WelcomeComponent}
 ];
 
+// => eine route ist wie GetMapping-Anno in Rest (@GetMapping(path = "welcome))
+//=> welcome deyince url'de su komponent'e gitsin....
+
 // there is a tag for router, which you'd need to use to enable routing.
 // Lets go to "app.component.html." That's the first component that is loaded.
 // Inside here, earlier we had commented something called, "router-outlet." => einkommentieren
