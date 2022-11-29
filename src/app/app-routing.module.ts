@@ -19,9 +19,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
 // first attribute: "Path": what is the path at which you would want to expose this? (url)
 // =>"welcome". and which component defines that? => zugehöriges WelcomeComponent
 const routes: Routes = [
-  {path: '', component: LoginComponent}
+  {path: '', component: LoginComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'welcome', component: WelcomeComponent},
+  {path: 'welcome', component: WelcomeComponent}
 ];
 
 // => eine route ist wie GetMapping-Anno in Rest (@GetMapping(path = "welcome))
